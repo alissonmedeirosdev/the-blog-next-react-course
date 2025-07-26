@@ -1,0 +1,48 @@
+{
+  "workbench.colorTheme": "OM Theme (Default Dracula Italic)",
+  "editor.fontFamily": "'Fira Code', monospace",
+  "editor.fontLigatures": true,
+
+  "window.zoomLevel": 1,
+  "breadcrumbs.enabled": false,
+  "editor.fontSize": 14,
+  "debug.console.fontSize": 24,
+  "terminal.integrated.fontSize": 24,
+  "editor.glyphMargin": false,
+  "workbench.activityBar.location": "default",
+  "editor.lineNumbers": "on",
+  "files.eol": "\n", // Final de linha sempre será LF
+
+  // Tab com 2 espaços
+  "editor.tabSize": 2,
+  "editor.insertSpaces": true,
+
+  // Compactar as pastas
+  "explorer.compactFolders": false,
+
+  // 🛠 Formatação e Lint
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true,
+
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "explicit"
+  },
+
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[xml]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[svg]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "git.autofetch": true,
+  "workbench.iconTheme": "material-icon-theme"
+}

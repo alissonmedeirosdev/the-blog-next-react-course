@@ -1,16 +1,11 @@
-import clsx from "clsx";
+import { Herader } from "@/components/Header";
 
-export default function HomePage() {
+export default async function HomePage() {
+  console.log("Olá mundo!");
+
   return (
-    <h1
-      className={clsx(
-        "text-6xl",
-        "text-blue-500",
-        "font-bold",
-        "houver:text-blue-50"
-      )}
-    >
-      Olá, Mundo!
-    </h1>
+    <div>
+      <Herader />
+    </div>
   );
 }

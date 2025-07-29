@@ -2,6 +2,7 @@ import { PostModel } from "@/models/post/post-model";
 import { PostRepository } from "./post-repository";
 import { resolve } from "path";
 import { readFile } from "fs/promises";
+import { postRepository } from ".";
 
 const ROOT_DIR = process.cwd();
 const JSON_POSTS_FILE_PATH = resolve(
@@ -37,9 +38,6 @@ export class JsonPostRepository implements PostRepository {
   }
 }
 
-export const postRepository: PostRepository = new JsonPostRepository();
-
-// postRepository.findAll().then((jsonContent) => console.log(jsonContent));
 postRepository
   .findById("99f8add4-7684-4c16-a316-616271db199e")
   .then((post) => console.log(post));

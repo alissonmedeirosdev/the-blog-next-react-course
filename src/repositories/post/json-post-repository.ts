@@ -2,7 +2,7 @@ import { PostModel } from "@/models/post/post-model";
 import { PostRepository } from "./post-repository";
 import { resolve } from "path";
 import { readFile } from "fs/promises";
-import { postRepository } from ".";
+// import { postRepository } from ".";
 
 const ROOT_DIR = process.cwd();
 const JSON_POSTS_FILE_PATH = resolve(
@@ -13,9 +13,15 @@ const JSON_POSTS_FILE_PATH = resolve(
   "posts.json"
 );
 
-console.log(JSON_POSTS_FILE_PATH);
+const SIMULATE_WAIT_IN_MS = 5000;
 
 export class JsonPostRepository implements PostRepository {
+  private async simulateWait() {
+    if (SIMULATE_WAIT_IN_MS <= 0) return;
+
+    await new Promise((resolve) => setTimeout(resolve, SIMULATE_WAIT_IN_MS));
+  }
+
   private async readFromDisk(): Promise<PostModel[]> {
     const jsontContent = await readFile(JSON_POSTS_FILE_PATH, "utf-8");
     const paserdJson = JSON.parse(jsontContent);
@@ -24,11 +30,13 @@ export class JsonPostRepository implements PostRepository {
   }
 
   async findAll(): Promise<PostModel[]> {
+    await this.simulateWait();
     const posts = await this.readFromDisk();
     return posts;
   }
 
   async findById(id: string): Promise<PostModel> {
+    await this.simulateWait();
     const posts = await this.findAll();
     const post = posts.find((post) => post.id === id);
 
@@ -38,9 +46,9 @@ export class JsonPostRepository implements PostRepository {
   }
 }
 
-postRepository
-  .findById("99f8add4-7684-4c16-a316-616271db199e")
-  .then((post) => console.log(post));
+// postRepository
+//   .findById("99f8add4-7684-4c16-a316-616271db199e")
+//   .then((post) => console.log(post));
 
 // (async () => {
 //   const jsonContent = await postRepository.findAll();

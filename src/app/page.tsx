@@ -1,11 +1,9 @@
-import { Herader } from "@/components/Header";
+import { SpinLoader } from "@/components/SpinLoader";
 
 export default async function HomePage() {
-  console.log("Olá mundo!");
-
   return (
     <div>
-      <Herader />
+      <SpinLoader className="min-h-[500] bg-amber-500" />
     </div>
   );
 }

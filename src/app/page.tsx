@@ -9,6 +9,11 @@ export default async function HomePage() {
     <Container>
       <Header />
 
+      <section>
+        <a href=""></a>
+        <div></div>
+      </section>
+
       <Suspense fallback={<SpinLoader />}>
         <PostsList />
       </Suspense>

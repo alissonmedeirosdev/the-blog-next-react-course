@@ -1,6 +1,7 @@
 // import clsx from "clsx";
 
 import clsx from "clsx";
+import Link from "next/link";
 
 // type HeaderProps = {
 //   children: React.ReactNode;
@@ -17,7 +18,7 @@ export function Header() {
           "lg:text-7xl/normal lg:py-12"
         )}
       >
-        <a href="">The blog</a>
+        <Link href="">The blog</Link>
       </h1>
     </header>
   );

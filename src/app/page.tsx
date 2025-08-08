@@ -11,21 +11,30 @@ export default async function HomePage() {
     <Container>
       <Header />
 
-      <section className="grid grid-cols-1 gap-8 sm:grid-cols-2 group">
+      <section className="grid grid-cols-1 mb-16 gap-8 sm:grid-cols-2 group">
         <Link href="#" className="w-full h-full overflow-hidden rounded-xl">
           <Image
-            className="group-hover:scale-105 transition"
+            className="w-full h-full object-cover object-center group-hover:scale-105 transition"
             src="/images/bryen_0.png"
             width={1200}
             height={720}
             alt="Titulo do post"
+            priority
           />
         </Link>
-        <div>
+        <div className="flex flex-col gap-4 sm:justify-center">
+          <time
+            className="block text-slate-300 text-sm/tight"
+            dateTime="2025-08-07"
+          >
+            07/08/2025 20:00
+          </time>
+          <h1 className="text-2xl/tight font-extrabold sm:text-4xl">
+            <Link href="#">Lorem ipsum dolor sit amet.</Link>
+          </h1>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint
           laboriosam saepe commodi libero ipsa consequuntur, et ipsam nihil quam
-          illo, reiciendis illum hic, eligendi itaque fugiat expedita eaque
-          similique animi.
+          illo.
         </div>
       </section>
 

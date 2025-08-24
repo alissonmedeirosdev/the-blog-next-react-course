@@ -21,6 +21,7 @@ export function PostCoverImage({ imageProps, linkProps }: PostCoverImageProps) {
     >
       <Image
         {...imageProps}
+        alt={imageProps.alt ?? ""}
         className={clsx(
           "w-full",
           "h-full",

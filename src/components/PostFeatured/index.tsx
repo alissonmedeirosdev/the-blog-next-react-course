@@ -1,28 +1,33 @@
 import { PostCoverImage } from "../PostCoverImage";
 import { PostSumary } from "../PostSumary";
+import { findAllPublicPosts } from "@/lib/post/queries";
 
-export function PostFeatured() {
-  const postLink = `/post/`;
+export async function PostFeatured() {
+  const posts = await findAllPublicPosts();
+
+  const post = posts[0];
+
+  const postLink = `/post/${post.slug}`;
 
   return (
     <section className="grid grid-cols-1 mb-16 gap-8 sm:grid-cols-2 group">
       <PostCoverImage
         linkProps={{ href: postLink }}
         imageProps={{
-          src: "/images/bryen_2.png",
+          src: post.coverImageUrl,
           width: 1200,
           height: 720,
-          alt: "Alt da imagem",
+          alt: post.title,
           priority: true,
         }}
       />
 
       <PostSumary
         postHeading="h2"
-        postLink="#"
-        title="10 hábitos para aumentar sua produtividade"
-        excerpt="o Next.js já vem com várias decisões prontas, permitindo que você comece a desenvolver mais rapidamente."
-        createdAt="2025-04-07T00:24:38.616Z"
+        postLink={postLink}
+        title={post.title}
+        excerpt={post.excerpt}
+        createdAt={post.createdAt}
       />
     </section>
   );

@@ -9,7 +9,7 @@
       "coverImageUrl": "/images/bryen_8.png",
       "published": true,
       "createdAt": "2025-04-08T00:24:38.616Z",
-      "updateAt": "2025-04-08T00:33:56.907Z",
+      "updatedAt": "2025-04-08T00:33:56.907Z",
       "author": "Isabela Nunes"
     },
     {
@@ -21,7 +21,7 @@
       "coverImageUrl": "/images/bryen_6.png",
       "published": true,
       "createdAt": "2025-04-07T00:24:38.616Z",
-      "updateAt": "2025-04-07T00:33:56.907Z",
+      "updatedAt": "2025-04-07T00:33:56.907Z",
       "author": "Marina Duarte"
     },
     {
@@ -33,7 +33,7 @@
       "coverImageUrl": "/images/bryen_9.png",
       "published": true,
       "createdAt": "2025-04-06T00:24:38.616Z",
-      "updateAt": "2025-04-06T00:33:56.907Z",
+      "updatedAt": "2025-04-06T00:33:56.907Z",
       "author": "Pedro Martins"
     },
     {
@@ -46,7 +46,7 @@
       "coverImageUrl": "/images/bryen_3.png",
       "published": true,
       "createdAt": "2025-04-05T00:24:38.616Z",
-      "updateAt": "2025-04-05T00:33:56.907Z"
+      "updatedAt": "2025-04-05T00:33:56.907Z"
     },
     {
       "id": "6b204dab-2312-4525-820a-a0463560835f",
@@ -57,7 +57,7 @@
       "coverImageUrl": "/images/bryen_5.png",
       "published": false,
       "createdAt": "2025-03-30T07:11:33",
-      "updateAt": "2025-04-05T00:14:03.175Z",
+      "updatedAt": "2025-04-05T00:14:03.175Z",
       "author": "Lucas Lima"
     },
     {
@@ -69,7 +69,7 @@
       "coverImageUrl": "/images/bryen_1.png",
       "published": true,
       "createdAt": "2025-03-08T13:13:13",
-      "updateAt": "2025-03-08T13:13:13",
+      "updatedAt": "2025-03-08T13:13:13",
       "author": "João Silva"
     },
     {
@@ -81,7 +81,7 @@
       "coverImageUrl": "/images/bryen_0.png",
       "published": true,
       "createdAt": "2025-02-22T04:32:54",
-      "updateAt": "2025-02-22T04:32:54",
+      "updatedAt": "2025-02-22T04:32:54",
       "author": "Ana Costa"
     },
     {
@@ -93,7 +93,7 @@
       "coverImageUrl": "/images/bryen_7.png",
       "published": true,
       "createdAt": "2025-02-11T20:59:30",
-      "updateAt": "2025-02-11T20:59:30",
+      "updatedAt": "2025-02-11T20:59:30",
       "author": "Thiago Ribeiro"
     },
     {
@@ -105,7 +105,7 @@
       "coverImageUrl": "/images/bryen_4.png",
       "published": true,
       "createdAt": "2025-01-15T04:54:26",
-      "updateAt": "2025-01-15T00:54:26",
+      "updatedAt": "2025-01-15T00:54:26",
       "author": "Bianca Rocha"
     },
     {
@@ -117,7 +117,7 @@
       "coverImageUrl": "/images/bryen_2.png",
       "published": false,
       "createdAt": "2025-01-07T22:54:10",
-      "updateAt": "2025-01-07T22:54:10",
+      "updatedAt": "2025-01-07T22:54:10",
       "author": "Carla Mendes"
     }
   ]

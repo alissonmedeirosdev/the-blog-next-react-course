@@ -1,6 +1,5 @@
 import { InferInsertModel, InferSelectModel } from "drizzle-orm";
 import { integer, sqliteTable, text } from "drizzle-orm/sqlite-core";
-import { title } from "process";
 
 export const postsTable = sqliteTable("posts", {
   id: text("id").primaryKey(),
